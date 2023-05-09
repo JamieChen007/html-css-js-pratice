@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.webpage {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  transition: transform 0.5s linear;
+}
+
+.navBtn {
+  position: relative;
+  z-index: 2;
+}
+
+#setBtn {
+  position: absolute;
+  z-index: 1;
+}
+
+#closeBtn {
+  position: absolute;
+  z-index: 0;
+}
+
+.menuBtn {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  border-radius: 0 0 90px 0;
+  line-height: 90px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container h1,
+.container i,
+.container p,
+.container h2,
+.container figure {
+  margin: 10px 0px;
+}
+
+.pic img {
+  max-width: 100%;
+}
+
+.menu {
+  position: absolute;
+  z-index: 0;
+  background-color: #333;
+  width: 100%;
+  height: 100vh;
+}
+
+.homeBtn {
+  position: fixed;
+  bottom: 200px;
+  left: 30px;
+  color: white;
+}
+
+.aboutBtn {
+  position: fixed;
+  bottom: 150px;
+  left: 40px;
+  color: white;
+}
+
+.contactBtn {
+  position: fixed;
+  bottom: 100px;
+  left: 50px;
+  color: white;
+}
