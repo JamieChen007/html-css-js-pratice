@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: auto;
+  font-size: 35px;
+}
+
+.module {
+  margin: 10px;
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: lightblue;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+  line-height: 200px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.module:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.module.show {
+  transform: translateX(0);
+}
