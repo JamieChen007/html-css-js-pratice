@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: steelblue;
+  position: relative;
+}
+
+.container form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 20vw;
+  height: 50vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 20px;
+}
+
+h1 {
+  width: 80%;
+  color: white;
+  margin: 30px auto;
+  font-size: 30px;
+}
+
+label {
+  width: 80%;
+  text-align: left;
+  margin: 0px auto;
+}
+
+span {
+  width: 80%;
+  color: lightblue;
+  margin: 5px auto;
+  text-align: left;
+  font-size: 18px;
+  opacity: 0;
+  transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+label span {
+  margin-left: -4px;
+}
+
+.emailTitle.active {
+  opacity: 1;
+}
+
+.PasswordTitle.active {
+  opacity: 1;
+}
+
+input {
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 80%;
+  margin: 10px auto;
+  font-size: 18px;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  height: 50px;
+  background-color: lightblue;
+  border: 0;
+  width: 80%;
+  margin: 30px auto;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#register {
+  color: white;
+  margin: 10px auto;
+  text-align: left;
+  font-size: 18px;
+  opacity: 1;
+}
+
+#register a {
+  cursor: pointer;
+  color: lightblue;
+}
