@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(161, 100, 223);
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  background-color: rebeccapurple;
+  width: 200px;
+  height: 80px;
+  margin: auto;
+  color: white;
+  font-size: x-large;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+audio {
+  background-color: rebeccapurple;
+  width: 200px;
+  height: 80px;
+  margin: auto;
+  color: white;
+  font-size: x-large;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
