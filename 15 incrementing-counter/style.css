@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blueviolet;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Muli", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.twitterlogo,
+.youtubelogo,
+.facebooklogo {
+  margin: 20px;
+}
+
+.twitter,
+.youtube,
+.facebook {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 100px;
+}
+
+#twitterFollowers,
+#youtubeFollowers,
+#facebookFollowers {
+  font-size: 40px;
+  margin: 20px;
+}
+
+#twitterDes,
+#youtubeDes,
+#facebookDes {
+  font-size: 20px;
+  margin: 20px;
+}

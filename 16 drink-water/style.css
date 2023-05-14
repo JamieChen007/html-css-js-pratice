@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: midnightblue;
+  color: white;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.glass {
+  margin: auto;
+  background-color: white;
+  height: 40vh;
+  width: 10vw;
+  color: blue;
+  border-radius: 0 0 50px 50px;
+  border: 3px solid red;
+  overflow: hidden;
+}
+
+.glass #remained {
+  margin: auto;
+  line-height: 40vh;
+  height: 40vh;
+  transition: 1s ease;
+}
+
+.glass #drank {
+  margin: auto;
+  line-height: 0vh;
+  height: 0vh;
+  background-color: lightblue;
+  transition: 1s ease;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 60%;
+  margin: auto;
+}
+
+.smallcup {
+  background-color: white;
+  height: 10vh;
+  line-height: 10vh;
+  width: 3vw;
+  color: blue;
+  border-radius: 0 0 15px 15px;
+  border: 1px solid red;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.smallcup.active {
+  background-color: lightblue;
+  height: 10vh;
+  line-height: 10vh;
+  width: 3vw;
+  color: blue;
+  border-radius: 0 0 15px 15px;
+  border: 1px solid red;
+  margin: 10px 10px;
+  cursor: pointer;
+}
