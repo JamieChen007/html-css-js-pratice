@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+/* light mode */
+.body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modebtn {
+  margin: 10px auto;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.clock {
+  position: relative;
+  margin: 10px auto;
+  width: 300px;
+  height: 300px;
+}
+
+.time {
+  margin: 10px auto;
+  height: 70px;
+  line-height: 70px;
+  font-size: 70px;
+  color: black;
+}
+
+.date {
+  margin: 10px auto;
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  color: black;
+}
+
+.day {
+  background-color: black;
+  color: white;
+  height: 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+#container_day {
+  margin: 0 auto;
+}
+
+.hour {
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  border-right: 2px solid black;
+  margin-top: 70px;
+  width: 150px;
+  height: 80px;
+  transform-origin: right bottom;
+}
+
+.minute {
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  border-right: 2px solid black;
+  margin-top: 50px;
+  width: 150px;
+  height: 100px;
+  transform-origin: right bottom;
+}
+
+.second {
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  border-right: 2px solid red;
+  margin-top: 40px;
+  margin-left: -2px;
+  width: 150px;
+  height: 110px;
+  transform-origin: right bottom;
+}
+
+.middle {
+  position: absolute;
+  background-color: black;
+  border: 2px solid red;
+  margin-top: 145px;
+  margin-left: 145px;
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+}
+
+/* dark mode */
+
+.body.dark {
+  background-color: black;
+}
+
+.container.dark {
+  border: 1px solid black;
+}
+
+.modebtn.dark {
+  background-color: white;
+  color: black;
+}
+
+.clock.dark {
+  /* margin: 10px auto;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black; */
+}
+
+.time.dark {
+  color: white;
+}
+
+.date.dark {
+  color: white;
+}
+
+.day.dark {
+  background-color: white;
+  color: black;
+}
+
+.hour.dark {
+  border-right: 2px solid white;
+}
+
+.minute.dark {
+  border-right: 2px solid white;
+}
