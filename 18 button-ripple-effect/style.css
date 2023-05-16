@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: auto;
+  position: absolute;
+  background-color: purple;
+  height: 80px;
+  width: 150px;
+  color: white;
+
+  border: none;
+}
+
+span {
+  margin: auto;
+  position: absolute;
+  background-color: #fff;
+  height: 80px;
+  width: 150px;
+  border-radius: 50%;
+  transform: translate(0%, 0%) scale(0);
+  animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0;
+  }
+}
