@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: blueviolet;
+}
+
+.showbtn {
+  width: 200px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: white;
+  color: blueviolet;
+  border: none;
+  margin: auto;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.showbtn:active {
+  width: 190px;
+  height: 60px;
+  transition: all 0.3s ease;
+}
+
+span {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: white;
+  color: blueviolet;
+  border: none;
+  font-size: 20px;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 80px;
+  margin: 20px 0;
+}
