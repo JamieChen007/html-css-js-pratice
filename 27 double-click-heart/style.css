@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  margin-top: 20px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tips {
+  font-weight: 900;
+  font-size: 25px;
+}
+
+#tips::before {
+  content: "♥";
+  color: red;
+  font-size: 30px;
+}
+
+.result {
+  font-size: 25px;
+}
+
+.picture {
+  cursor: pointer;
+  height: 500px;
+  margin: 0 auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: fill;
+  background: url(https://images.unsplash.com/photo-1504215680853-026ed2a45def?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80)
+    no-repeat center center/cover;
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.picture.like::after {
+  content: "♥";
+  color: red;
+  position: absolute;
+  display: inline-block;
+  font-size: 200px;
+  transition: all 1s ease;
+  width: 200px;
+  height: 200px;
+  animation: grow 0.5s ease;
+}
+
+@keyframes grow {
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
