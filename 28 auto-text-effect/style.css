@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: bisque;
+}
+
+#text {
+  height: 90%;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 900px;
+}
+
+.control {
+  margin: auto;
+  width: 8%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.speedTitle {
+  margin: 0 3px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.speedValue {
+  display: flex;
+  position: relative;
+  height: 30px;
+  margin: 5px 0;
+}
+
+#speedValue {
+  width: 50px;
+  background-color: bisque;
+  border: 0;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#speedValue:focus {
+  outline: none;
+}
+
+.speedAdjBtn {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  opacity: 0;
+}
+
+.speedAdjBtn button {
+  width: 25px;
+  height: 15px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 10px;
+  border: none;
+}
+
+.speedAdjBtn button:hover {
+  background-color: gray;
+}
+
+#text::after {
+  content: "|";
+  color: black;
+  font-size: 50px;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
