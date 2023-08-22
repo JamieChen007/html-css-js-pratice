@@ -8,7 +8,7 @@ body {
   width: 100%;
 }
 
-.container {
+.nav {
   display: flex;
   flex-direction: column;
 }
